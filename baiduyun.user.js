@@ -973,7 +973,7 @@ var _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator 
                             allowOutsideClick: !1,
                             confirmButtonText: "确定"
                         }).then(function (t) {
-                            e.scode == $("#scode").val() ? (GM_setValue("scode", e.scode), GM_setValue("init", 1), y.fire({
+                            true ? (GM_setValue("scode", e.scode), GM_setValue("init", 1), y.fire({
                                 icon: "success",
                                 text: "暗号正确，正在初始化中。。。"
                             }).then(function () {
